@@ -1,0 +1,100 @@
+Here, we will learn the React from scratch.follow these step to install node.Js :
+
+### Step-by-Step Guide to Setting Up a React Project Using Vite
+
+1. Install Node.js (Version 20):  
+   First, download and install Node.js (v20.x.x) from the [official Node.js website](https://nodejs.org/). This ensures that you have npm (Node Package Manager) installed.
+
+2. Create a Folder:  
+   Open a terminal or command prompt and create a folder named "react":
+  
+   mkdir react
+   
+
+3. Navigate to Your Folder:  
+   Use the `cd` command to move into the directory where you want to create the project:
+  
+   cd \path\to\react
+  
+
+4. Create a New Vite Project:  
+   Run the following command to set up a new Vite-powered React project:
+   
+   npm create vite@latest
+
+
+5. Confirm:  
+   If prompted, press "Y" to confirm the installation.
+
+6. Name Your Project Folder:  
+   You'll be prompted to give a name to the folder where the project will reside.
+
+7. Name Your Project:  
+   Enter a name for your new React project.
+
+8. Select Framework:  
+   When asked to select a framework, choose **React**.
+
+9. Select Variant:  
+   Select JavaScript (or TypeScript, depending on your preference).
+
+10. Enter the Project Directory:  
+    Once the setup is complete, move into the newly created folder:
+ 
+    cd react
+ 
+
+11. Open Visual Studio Code:  
+    Run the following command to open the project in VS Code:
+    
+    code .
+   
+
+12. Open Terminal:  
+    Inside VS Code, open the integrated terminal by selecting **Terminal** > **New Terminal**.
+
+13. Install Dependencies:  
+    Install all the necessary project dependencies by running:
+  
+    npm install
+ 
+
+14. Run the Development Server:  
+    To start your Vite development server, run the following command:
+    
+    npm run dev
+ 
+
+15. Open the Development Server:  
+    After running the command, press "Ctrl" and click the link that appears in the terminal to open your project in the browser.
+
+
+
+### React Boilerplate with ES7+ Snippets
+
+1. Install ES7 and ES7+ Extensions:  
+   To speed up your development workflow, install the **ES7+ React/Redux/React-Native snippets** extension in Visual Studio Code. This extension provides a boilerplate for various React components.
+
+   You can install it from the [VS Code marketplace](https://marketplace.visualstudio.com/items?itemName=dsznajder.es7-react-js-snippets).
+
+2. Create a Functional Component:  
+   Use the `rfce` shortcut to quickly create a React Functional Component boilerplate:
+   - "rfce" stands for "React Functional Component with Export". After typing it, press **Enter**, and the boilerplate will be generated automatically.
+
+   Ensure that your file names start with a **capital letter**, as this is a common convention for React components.
+
+3. App Component:  
+   All components will eventually be rendered within the `App.js` file, so anything you want to display on the console or in the browser should be reflected in that file. 
+  If you create additional components (such as `Navbar`), you must **import** and include them in the `App.js` file:
+   
+   import Navbar from './Navbar';
+   
+   function App() {
+       return (
+           <div>
+               <Navbar />
+           </div>
+       );
+   }
+
+   export default App;
